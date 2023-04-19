@@ -72,7 +72,7 @@ public class NewsListFragment extends Fragment {
             public void onTaskItemClick(int position) {
                 try {
                     NewsOpenFragment dataDetailScreenFragment = new NewsOpenFragment();
-                    dataDetailScreenFragment.newInstance(projects1);
+                    dataDetailScreenFragment.newInstance(projects1,position);
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     ft.add(R.id.container_list_frag, dataDetailScreenFragment);
                     ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
@@ -82,6 +82,14 @@ public class NewsListFragment extends Fragment {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+
+            }
+
+            @Override
+            public void onTaskInsideItemClick(int position) {
+
+                projects1.remove(position);
+                adapter.setNewList(projects1);
 
             }
         });

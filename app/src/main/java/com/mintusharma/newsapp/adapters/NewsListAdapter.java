@@ -58,6 +58,13 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.MyView
                 onClickListner.onTaskItemClick(position);
             }
         });
+
+        holder.binding.dltIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onClickListner.onTaskInsideItemClick(position);
+            }
+        });
     }
 
     @Override

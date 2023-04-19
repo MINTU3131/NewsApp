@@ -60,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
+                android:fontFamily="@font/poppins_regular"
                 android:text="Tittle"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/_12ssp" />
@@ -85,6 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
+                    android:fontFamily="@font/poppins_regular"
                     android:textSize="@dimen/_12ssp"
                     android:textColor="@color/black"
                     android:text="Description" />
@@ -98,6 +100,7 @@
                 android:paddingBottom="@dimen/_2sdp"
                 android:paddingTop="@dimen/_2sdp"
                 android:singleLine="true"
+                android:fontFamily="@font/poppins_regular"
                 android:text="Published Date"
                 android:textSize="@dimen/_10ssp" />
 
@@ -119,6 +122,7 @@
 <!--                app:tint="@color/red" />-->
 
             <ImageView
+                android:id="@+id/dltIcon"
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
                 android:backgroundTint="@color/white"
