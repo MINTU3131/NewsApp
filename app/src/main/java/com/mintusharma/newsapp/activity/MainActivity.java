@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.main_container, dataDetailScreenFragment);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        ft.addToBackStack(null);
+//        ft.addToBackStack(null);
         ft.commit();
     }
 }
