@@ -94,7 +94,6 @@ public class NewsListFragment extends Fragment {
             }
         });
         binding.rvList.setAdapter(adapter);
-        binding.progressbar.setVisibility(View.GONE);
 
         getNewsList();
 

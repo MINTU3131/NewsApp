@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/_10sdp"
+    android:background="@color/white"
+    android:clickable="true"
     tools:context=".fragments.NewsOpenFragment">
 
     <ScrollView
