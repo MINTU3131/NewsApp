@@ -8,12 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mintusharma.newsapp.databinding.FragmentNewsOpenBinding;
+import com.mintusharma.newsapp.models.Article;
 
+import java.util.List;
 
 
 public class NewsOpenFragment extends Fragment {
 
     private FragmentNewsOpenBinding binding;
+    List<Article> projects1;
 
     public NewsOpenFragment() {
         // Required empty public constructor

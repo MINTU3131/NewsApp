@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.mintusharma.newsapp.OnClickListner;
+import com.mintusharma.newsapp.R;
 import com.mintusharma.newsapp.databinding.RowItemForNewsListBinding;
 import com.mintusharma.newsapp.models.Article;
 import com.mintusharma.newsapp.models.NewsListResponseModel;
@@ -41,9 +43,14 @@ public class NewsListAdapter extends RecyclerView.Adapter<NewsListAdapter.MyView
     public void onBindViewHolder(MyViewHolder holder, @SuppressLint("RecyclerView") int position){
 
         Article taskModel = items1.get(position);
-        holder.binding.submissionId.setText(taskModel.getTitle());
-        holder.binding.date.setText(taskModel.getDescription());
-        holder.binding.status.setText(taskModel.getPublishedAt());
+        holder.binding.tittle.setText(taskModel.getTitle());
+        holder.binding.description.setText(taskModel.getDescription());
+        holder.binding.date.setText(taskModel.getPublishedAt());
+
+        Glide.with(holder.itemView.getContext())
+                .load(taskModel.getUrlToImage())
+                .centerCrop()
+                .into(holder.binding.logo);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

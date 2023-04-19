@@ -56,7 +56,7 @@
             android:paddingLeft="@dimen/_10sdp">
 
             <TextView
-                android:id="@+id/submissionId"
+                android:id="@+id/tittle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
@@ -81,7 +81,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/date"
+                    android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
@@ -91,7 +91,7 @@
 
             </LinearLayout>
             <TextView
-                android:id="@+id/status"
+                android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="@dimen/_5sdp"
