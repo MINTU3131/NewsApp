@@ -1,13 +1,17 @@
 package com.mintusharma.newsapp.models;
 
+import androidx.room.Embedded;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+@Entity(tableName = "article")
 public class Article {
 
-    @SerializedName("source")
-    @Expose
-    private Source source;
+    @PrimaryKey(autoGenerate = true)
+    private int id_main;
     @SerializedName("author")
     @Expose
     private String author;
@@ -30,12 +34,12 @@ public class Article {
     @Expose
     private String content;
 
-    public Source getSource() {
-        return source;
+    public int getId_main() {
+        return id_main;
     }
 
-    public void setSource(Source source) {
-        this.source = source;
+    public void setId_main(int id_main) {
+        this.id_main = id_main;
     }
 
     public String getAuthor() {
